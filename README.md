@@ -28,6 +28,6 @@ from scipy.optimize import minimize
 from scipy.stats import binom
 from sklearn.utils import resample
 
-# Define logistic regression model, bootstrap resampling, and Delta Method functions
+
 
 
