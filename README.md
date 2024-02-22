@@ -3,7 +3,7 @@ This repository offers an analysis of bioassay data to estimate LD50 using Pytho
 
 
 ## Description of the Problem
-The bioassay data analysis aims to estimate parameters (\(\alpha\) and \(\beta\)) that describe the relationship between dose levels and the probability of an outcome (e.g., death in toxicology studies). The analysis further seeks to estimate the LD50, the dose at which there is a 50% chance of observing the outcome, and assess the uncertainty of these estimates through confidence intervals and comparison with posterior distributions.
+The bioassay data analysis aims to estimate parameters $\alpha$ and $\beta$ that describe the relationship between dose levels and the probability of an outcome (e.g., death in toxicology studies). The analysis further seeks to estimate the LD50, the dose at which there is a 50% chance of observing the outcome, and assess the uncertainty of these estimates through confidence intervals and comparison with posterior distributions.
 
 ## Coding
 The analysis was performed using Python, leveraging libraries such as NumPy, SciPy, and Scikit-learn. Key steps in the analysis include:
