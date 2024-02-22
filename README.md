@@ -29,5 +29,10 @@ from scipy.stats import binom
 from sklearn.utils import resample
 
 
-
+## Results
+- Parameter Estimates: Derived from logistic regression to define the dose-response relationship.
+- LD50 Estimates: Calculated using model estimates and refined with the Delta Method.
+- Confidence Intervals: Constructed through bootstrap analysis and Delta Method calculations for parameters and LD50.
+## Conclusion
+The project demonstrates the efficacy of Non-Bayesian methods, including logistic regression, bootstrap analysis, and the Delta Method, in bioassay data analysis. These approaches provide reliable estimates of LD50, showcasing their value in pharmacology and toxicology research.
 
