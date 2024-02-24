@@ -8,7 +8,7 @@ The bioassay data analysis aims to estimate parameters $\alpha$ and $\beta$ that
 ## Project Structure
 - **Exploratory Data Analysis (EDA)**: Initial visualization and statistical summary to explore the dose-response curve.
 - **Modeling**: Application of logistic regression to model the dose-response relationship, including parameter estimation.
-- **Bootstrap Analysis**: Use of bootstrap resampling for constructing 95% confidence intervals for \(\alpha\), \(\beta\), and LD50.
+- **Bootstrap Analysis**: Use of bootstrap resampling for constructing 95% confidence intervals for $\alpha$, $\beta$, and LD50.
 - **Delta Method Analysis**: Employing the Delta Method for variance estimation of LD50, offering a nuanced approach to uncertainty quantification.
 - **Comparative Analysis**: Evaluating Non-Bayesian estimates against Bayesian posterior distributions to validate methodological robustness.
 - **Visualization and Statistical Summary**: Detailed analysis and graphical representation to convey findings effectively.
@@ -31,9 +31,9 @@ from sklearn.utils import resample
 
 
 ## Results
-- Parameter Estimates: Derived from logistic regression to define the dose-response relationship.
-- LD50 Estimates: Calculated using model estimates and refined with the Delta Method.
-- Confidence Intervals: Constructed through bootstrap analysis and Delta Method calculations for parameters and LD50.
+- **Parameter Estimates**: Derived from logistic regression to define the dose-response relationship.
+- **LD50 Estimates**: Calculated using model estimates and refined with the Delta Method.
+- **Confidence Intervals**: Constructed through bootstrap analysis and Delta Method calculations for parameters and LD50.
 ## Conclusion
 The project demonstrates the efficacy of Non-Bayesian methods, including logistic regression, bootstrap analysis, and the Delta Method, in bioassay data analysis. These approaches provide reliable estimates of LD50, showcasing their value in pharmacology and toxicology research.
 
