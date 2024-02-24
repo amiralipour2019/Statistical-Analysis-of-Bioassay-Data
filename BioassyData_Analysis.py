@@ -1,16 +1,10 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Feb 18 15:46:06 2024
-
-@author: Amir Alipour
-"""
 
 # call the required libraries
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-# problem 3:
+
     
 # Define Bioassay Data
 bioassay_data=pd.DataFrame({
@@ -245,13 +239,15 @@ print(f"Mean of LD50 samples: {ld50_mean}")
 print(f"Median of LD50 samples: {ld50_median}")
 print(f"Standard deviation of LD50 samples: {ld50_std}")
 
-# Problem 10
+# Non-Bayesian Analysis of Bioassay Data
 # call required libaray
 from scipy.optimize import minimize
 # Bioassay data
 x=np.array([-0.86, -0.30, -0.05, 0.73])
 n=np.array([5, 5, 5, 5])
 y=np.array([0, 1, 3, 5])
+
+# MLE Estimator of α, β
 # define the Logit Function
 def logit(theta):
     return np.log(theta/(1-theta))
@@ -276,7 +272,7 @@ res=minimize(neg_log_likelihood,initial_values, method="BFGS")#Broyden–Fletche
 #get the MLEs
 alpha_hat,beta_hat=res.x
 alpha_hat,beta_hat
-
+# Estimating the bias and variance of model parameters (α and β)
 from scipy.optimize import minimize
 from scipy.stats import binom
 import numpy as np
@@ -324,7 +320,7 @@ beta_variance= np.var(beta_estimates)
 
 (alpha_bias, beta_bias, alpha_variance, beta_variance)
 
-# Part 10.e
+# Bootstrap Analysis
 import numpy as np
 from sklearn.utils import resample
 from sklearn.linear_model import LogisticRegression
