@@ -27,6 +27,16 @@ import matplotlib.pyplot as plt
 from scipy.optimize import minimize
 from scipy.stats import binom
 from sklearn.utils import resample
+
+# Define Bioassay Data
+bioassay_data=pd.DataFrame({
+    'Dose_Log_g_ml':[-0.86,-0.30,-0.05,0.73],
+    'Number_of_Animals':[5,5,5,5],
+    'Number_of_Deaths':[0,1,3,5]
+})
+
+bioassay_data.head()
+bioassay_data.shape
 ```
 
 
